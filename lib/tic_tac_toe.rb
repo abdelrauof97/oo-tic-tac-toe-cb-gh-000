@@ -11,6 +11,8 @@ class TicTacToe
   
   def input_to_index
     user_input = gets.strip
-    @index = "user_input" - 1
+    @index = "#{user_input}" - 1
+    
+    def 
     
 end
