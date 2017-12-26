@@ -12,7 +12,12 @@ class TicTacToe
   def input_to_index
     user_input = gets.strip
     @index = "#{user_input}" - 1
+  end
     
-    def 
+  def move
+    @board[@index] = current_player
+  end 
+  
+  
     
 end
