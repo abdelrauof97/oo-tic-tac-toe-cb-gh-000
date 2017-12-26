@@ -5,7 +5,7 @@ class TicTacToe
   end 
   
   def display_board
-    @board 
+    puts 
   end
   
   def input_to_index
