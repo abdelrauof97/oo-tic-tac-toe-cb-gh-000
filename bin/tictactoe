@@ -2,7 +2,7 @@
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
 
-#
+#  ruby bin/tictactoe
 
 
 puts "Welcome to Tic Tac Toe!"
