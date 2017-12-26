@@ -65,18 +65,18 @@ class TicTacToe
   end
   
   def draw?
-    !won? && full?
-  end 
-  
+    full? && !won?
+  end
+
   def over?
-    won? || full?
-  end 
-  
-  def winner 
-    if won?
-      @board[won?.first]
+    won? || draw?
+  end
+
+  def winner
+    if combo = won?
+      @board[combo[0]]
     end
-  end 
+  end
     
   def play 
     while !over?
