@@ -37,10 +37,14 @@ class TicTacToe
     end
   end
     
+  def turn_count 
+    @board.count{ |x| x != " " || x != "" || x != nil }
+  end
   
-  
-  
-  
+  def current_player 
+    turn_count % == 2 X ? O
+    
+    
   
     
 end
