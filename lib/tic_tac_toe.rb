@@ -13,8 +13,8 @@ class TicTacToe
     @index = "#{user_input}".to_i - 1
   end
     
-  def move
-    @board[@index] = player
+  def move(board, index, player)
+    board[index] = player
   end 
   
   def position_taken?
@@ -30,9 +30,12 @@ class TicTacToe
     user_input = gets.strip
     index = input_to_index(user_input)
     if valid_move?
-      move()
-    
-    
+      move(@board, @index, current_player)
+    else 
+      puts "invalid!, please input again(1- 9)"
+      turn 
+    end
+  end
     
   
   
