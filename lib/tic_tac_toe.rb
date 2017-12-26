@@ -48,9 +48,9 @@ class TicTacToe
     @board.count{|square| square != " " }
   end
   
-  def current_player 
-    turn_count % 2 == 0 ?  "X" : "O"
-  end 
+  def current_player
+    turn_count.even? ? "X" : "O"
+  end
   
   def won?
     WIN_COMBINATIONS.detect? { |combo| combo[@baord[0]] == combo[@board[1]] && combo[@board[2] == combo[@board[1]] && position_taken
