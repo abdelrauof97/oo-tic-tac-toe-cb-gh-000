@@ -1,10 +1,8 @@
 class TicTacToe
   def initialize(board = nil)
     @board=board || Array.new(9, " ")
-    
+    WIN_COMBINATIONS = [ [0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,7] ]
   end 
-  
- 
   
   def display_board
     @board 
@@ -47,11 +45,10 @@ class TicTacToe
   end 
   
   def won?
-    
-  
-  
+    WIN_COMBINATIONS.detect? { |combo| combo[@baord[0]] == combo[@board[1]] && combo[@board[2] == combo[@board[1]] && position_taken
     
     
-  
+    
+    
     
 end
