@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require 'pry'
 require_relative '../lib/tic_tac_toe.rb'
-
-board = TicTacToe.new("board")
+puts "welcom to tictactoe"
+game = TicTacToe.new
+game.play
 
 
