@@ -49,8 +49,26 @@ class TicTacToe
   end 
   
   def full?
-    @board.all { |y| "y "== "X" || y == "O"
+    @board.all { |y| "#{y} "== "X" || "#{y}" == "O"
+  end
+  
+  def draw?
+    !won? && full?
+  end 
+  
+  def over?
+    won? || full?
+  end 
+  
+  def winner 
+    won?.first
     
+    
+    
+  
+  
+  
+  
     
     
     
