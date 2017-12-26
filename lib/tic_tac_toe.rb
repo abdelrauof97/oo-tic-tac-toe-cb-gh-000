@@ -30,6 +30,7 @@ class TicTacToe
     index = input_to_index(user_input)
     if valid_move?
       move(@board, @index, current_player)
+      display_board
     else 
       puts "invalid!, please input again(1- 9)"
       turn 
