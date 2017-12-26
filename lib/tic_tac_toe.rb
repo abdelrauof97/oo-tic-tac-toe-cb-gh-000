@@ -10,8 +10,7 @@ class TicTacToe
   end
   
   def input_to_index
-    user_input = gets.strip
-    @index = "#{user_input}" - 1
+    @index = "#{user_input}".to_i - 1
   end
     
   def move
@@ -23,8 +22,20 @@ class TicTacToe
   end 
   
   def valid_move?
-    @index.between(0, 8) && !position_taken?
+    @index.between(1, 9) && !position_taken?
   end
+  
+  def turn 
+    puts "take a position between {1-9)"
+    user_input = gets.strip
+    index = input_to_index(user_input)
+    if 
+    
+    
+    
+  
+  
+  
   
   
     
