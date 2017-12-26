@@ -61,7 +61,7 @@ class TicTacToe
   end
   
   def full?
-    @board.all { |y| "#{y} "== "X" || "#{y}" == "O"
+    @board.all?{|square| square != " " }
   end
   
   def draw?
